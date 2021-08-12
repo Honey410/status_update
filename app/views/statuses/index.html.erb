@@ -22,7 +22,7 @@
         </div>
     <div>
       <%= link_to 'EDIT TASK',edit_status_path(status), class:"btn btn-outline-primary btn-sm mb-3" %>
-      <%= button_to 'DELETE TASK',status_path(status), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-outline-danger btn-sm ms-2 mb-3" %>
+      <%= button_to 'DELETE TASK',status_path(status), method: :delete, data: { confirm: "Are you sure to delete Task?" }, class:"btn btn-outline-danger btn-sm ms-2 mb-3" %>
     </div>
 </div>
 <% end %>
