@@ -4,7 +4,7 @@ class Status < ApplicationRecord
 
     validates :date, presence: true
 
-    def total_hours_count
-        tasks.sum(:houe)
-    end
+    # def total_hours_count
+    #     tasks.sum(:houe)
+    # end
 end

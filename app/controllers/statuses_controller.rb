@@ -8,8 +8,8 @@ class StatusesController < ApplicationController
 
     def create
         @status = Status.new(status_params)
-        if @status.save
-          StatusMailer.with(status: @status).new_status_email.deliver_later
+        if @status.save!
+            StatusMailer.with(status: @status).new_status_email.deliver_now
           flash[:notice] = 'Status created successfully & Mail has been sent'
           redirect_to status_path(@status)
         else
@@ -49,6 +49,6 @@ class StatusesController < ApplicationController
 
     private
     def status_params
-        params.require(:status).permit(:date, tasks_attributes: [:id, :name, :git_pr, :houe, :_destroy ])
+        params.require(:status).permit(:date, tasks_attributes: [:id, :name, :pr, :houes, :_destroy ])
     end
 end

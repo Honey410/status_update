@@ -23,17 +23,17 @@
   }
   .flickr_pagination a {
     border: 1px solid whitesmoke;
-    color: rgb(20, 20, 20);
+    color: rgb(221, 175, 175);
     text-decoration: none;
   }
   .flickr_pagination a:hover,
   .flickr_pagination a:focus {
     border-color: rgb(165, 161, 161);
-    background: whitesmoke;
-    color: rgb(165, 161, 161);
+    background: rgb(255, 197, 197);
+    color: rgb(247, 210, 210);
   }
   .flickr_pagination .page_info {
-    color: #aaaaaa;
+    color: #ffdada;
     padding-top: 0.8em;
   }
   .flickr_pagination .previous_page,
@@ -47,3 +47,19 @@
     margin-left: 1em;
   }
   
+  #logo {
+    float: left;
+    font-size: 1.7em;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+  }
+  .navbar {
+    background-color: rgb(130, 147, 204) !important;
+  }
+
+  .nav-link {
+    color: rgb(0, 0, 0) !important;
+  }
+ 
